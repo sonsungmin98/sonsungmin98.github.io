@@ -11,18 +11,53 @@ order: 1
 
 ## Project
 
-|개요|Project|
-|---|---|
-|콩스튜디오|가디언 테일즈|
-|펄어비스|검은사막 모바일|
-|4시 33분|Meta Bolts|
-|2022 대학교 졸업 작품|ToyLand|
-|2021 대학교 팀 프로젝트|Lost Home|
-|2021 대학교 팀 프로젝트|도깨비|
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: left; color: #94A3B8; font-weight: 500; padding: 0.75rem 0.5rem;">소속</th>
+      <th style="text-align: left; color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">Project</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">콩스튜디오</td>
+      <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">가디언 테일즈</td>
+    </tr>
+    <tr>
+      <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">펄어비스</td>
+      <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">검은사막 모바일</td>
+    </tr>
+    <tr>
+      <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">4시 33분</td>
+      <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">Meta Bolts</td>
+    </tr>
+    <tr>
+      <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">2022 대학교 졸업 작품</td>
+      <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">ToyLand</td>
+    </tr>
+    <tr>
+      <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">2021 대학교 팀 프로젝트</td>
+      <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">Lost Home</td>
+    </tr>
+    <tr>
+      <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">2021 대학교 팀 프로젝트</td>
+      <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">도깨비</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Highlight
 
 ### MetaBolts
+
+<p align="center">
+  <img
+    src="http://img.youtube.com/vi/Or4Pxzo4idw/0.jpg"
+    alt="MetaBolts 유튜브 대표 썸네일"
+    style="width: 100%; max-width: 720px; border-radius: 14px;"
+  >
+</p>
+
 - Unity / C#
 - 수집형 액션 RPG
 - 전반적인 컨텐츠 제작, SDK 적용, 버그 픽스, 타 파트를 위한 툴 제작
@@ -31,6 +66,15 @@ order: 1
 [MetaBolts 문서 보기]({{ '/posts/MetaBolts/' | relative_url }})
 
 ### MMORPG Server
+
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/4a6f27b1-b185-44d9-a4ef-4da3f36a7eee"
+    alt="MMORPG 서버 이동 동기화 예시 이미지"
+    style="width: 100%; max-width: 720px; border-radius: 14px;"
+  >
+</p>
+
 - C++, IOCP, Protobuf, Unreal 5.4, MSSQL, Python
 - 검은사막 모바일 스타일의 MMORPG를 기준으로 개인 제작 중인 서버 프로젝트
 - 서버 Core와 콘텐츠 동기화 문서를 정리해두었습니다
@@ -41,6 +85,15 @@ order: 1
 {% endfor %}
 
 ### ToyLand
+
+<p align="center">
+  <img
+    src="http://img.youtube.com/vi/ML6XieDvd6Y/0.jpg"
+    alt="ToyLand 유튜브 대표 썸네일"
+    style="width: 100%; max-width: 720px; border-radius: 14px;"
+  >
+</p>
+
 - Unreal 4.26.2
 - 3D 액션 / 핵 앤 슬래시
 - Player Character, UI, Interactive Object 작업 담당
@@ -49,6 +102,15 @@ order: 1
 [ToyLand 문서 보기]({{ '/posts/ToyLand/' | relative_url }})
 
 ### 협업 툴
+
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/ef2092f0-9c48-44dd-8130-1a689c44a3ef"
+    alt="협업 툴 대표 화면"
+    style="width: 100%; max-width: 720px; border-radius: 14px;"
+  >
+</p>
+
 - Unity 기반 툴링
 - 파일 관리, GitHub Issue 관리 등 협업 생산성을 위한 기능 제작
 - 엔진 종속 툴과 외부 툴을 함께 확장 중
@@ -56,6 +118,15 @@ order: 1
 [협업툴 문서 보기]({{ '/posts/협업툴/' | relative_url }})
 
 ### 도깨비
+
+<p align="center">
+  <img
+    src="http://img.youtube.com/vi/ubSrKggzOyk/0.jpg"
+    alt="도깨비 유튜브 대표 썸네일"
+    style="width: 100%; max-width: 720px; border-radius: 14px;"
+  >
+</p>
+
 - Unity 2020.2.3.f1
 - 2D 액션 플랫포머
 - Enemy, UI, 현실 세계 연출, 튜토리얼 제작 담당
