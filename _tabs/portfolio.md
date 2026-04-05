@@ -52,7 +52,7 @@ order: 1
 
 <p align="center">
   <img
-    src="http://img.youtube.com/vi/Or4Pxzo4idw/0.jpg"
+    src="https://img.youtube.com/vi/Or4Pxzo4idw/0.jpg"
     alt="MetaBolts 유튜브 대표 썸네일"
     style="width: 100%; max-width: 720px; border-radius: 14px;"
   >
@@ -88,7 +88,7 @@ order: 1
 
 <p align="center">
   <img
-    src="http://img.youtube.com/vi/ML6XieDvd6Y/0.jpg"
+    src="https://img.youtube.com/vi/ML6XieDvd6Y/0.jpg"
     alt="ToyLand 유튜브 대표 썸네일"
     style="width: 100%; max-width: 720px; border-radius: 14px;"
   >
@@ -121,7 +121,7 @@ order: 1
 
 <p align="center">
   <img
-    src="http://img.youtube.com/vi/ubSrKggzOyk/0.jpg"
+    src="https://img.youtube.com/vi/ubSrKggzOyk/0.jpg"
     alt="도깨비 유튜브 대표 썸네일"
     style="width: 100%; max-width: 720px; border-radius: 14px;"
   >
