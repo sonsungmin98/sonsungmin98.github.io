@@ -10,13 +10,13 @@ tags: [portfolio, unity, observer-pattern, ui, fcm, ios]
 
 **Main**
 
-<img width="48%" src = "https://github.com/user-attachments/assets/2845caca-7e00-4596-91b3-9663e58180d2">
-<img width="48%" src = "https://github.com/user-attachments/assets/46abf7dd-7502-4c3e-a3bf-e24ca2efac82">
+<img width="48%" src = "https://github.com/user-attachments/assets/2845caca-7e00-4596-91b3-9663e58180d2" alt="MetaBolts 업적 메인 UI 화면">
+<img width="48%" src = "https://github.com/user-attachments/assets/46abf7dd-7502-4c3e-a3bf-e24ca2efac82" alt="MetaBolts 업적 진행 상태 UI 화면">
 
 플레이어가 특정 조건을 달성하면 해당 업적이 클리어 되고 업적에 따라 보상을 획득합니다.
 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/user-attachments/assets/8cf2fc90-d6e2-4a36-bdcc-289777037abc">
+    <img width="60%" src="https://github.com/user-attachments/assets/8cf2fc90-d6e2-4a36-bdcc-289777037abc" alt="MetaBolts 업적 시스템 구조 또는 상세 UI">
 </p>
 
 업적의 경우 기본 구현은 Observer pattern을 이용하여 구현하였습니다. Observer pattern으로 구현한 이유는 업적 달성 확인에 대한 세부 구현 사항을 분리하고 싶었기 때문입니다.
@@ -25,9 +25,9 @@ tags: [portfolio, unity, observer-pattern, ui, fcm, ios]
 
 **Gallery & Figure**
 
-<img width="33%" src = "https://github.com/user-attachments/assets/476e15a7-644f-4a76-8866-a879fc33dcce">
-<img width="33%" src = "https://github.com/user-attachments/assets/7380258b-b7f4-427f-ae12-4dc192d2bdf4">
-<img width="33%" src = "https://github.com/user-attachments/assets/5fbf4d80-d9b5-42a0-ae44-30aa03f4f3f8">
+<img width="33%" src = "https://github.com/user-attachments/assets/476e15a7-644f-4a76-8866-a879fc33dcce" alt="MetaBolts 갤러리 UI 화면">
+<img width="33%" src = "https://github.com/user-attachments/assets/7380258b-b7f4-427f-ae12-4dc192d2bdf4" alt="MetaBolts 피규어 보상 UI 화면">
+<img width="33%" src = "https://github.com/user-attachments/assets/5fbf4d80-d9b5-42a0-ae44-30aa03f4f3f8" alt="MetaBolts 갤러리 또는 피규어 전시 화면">
 
 - Gallery는 업적을 클리어한 개수에 따라 해금되는 컨텐츠 입니다.
 - Figure의 경우에는 특정 업적을 달성하면 지급하는 리워드입니다.
@@ -36,8 +36,8 @@ tags: [portfolio, unity, observer-pattern, ui, fcm, ios]
 
 ### 뱃지(장비) - 연출
 
-<img width="48%" src = "https://github.com/user-attachments/assets/545232cb-9b3b-424d-91dd-c56d915fef45">
-<img width="48%" src = "https://github.com/user-attachments/assets/932d4745-0856-431f-8652-6ef28ae5aa69">
+<img width="48%" src = "https://github.com/user-attachments/assets/545232cb-9b3b-424d-91dd-c56d915fef45" alt="MetaBolts 뱃지 보상 연출 UI">
+<img width="48%" src = "https://github.com/user-attachments/assets/932d4745-0856-431f-8652-6ef28ae5aa69" alt="MetaBolts 등급별 뱃지 연출 UI">
 
 보상에 따라 뱃지를 동적으로 생성해 배치를 하여 연출을 진행했습니다. 뱃지의 등급에 따라 glow를 주는 연출도 하였습니다.
 등급에 따른 glow를 그래픽 파트에서 편하게 변경하기 위한 툴을 제작했습니다.
@@ -45,9 +45,9 @@ tags: [portfolio, unity, observer-pattern, ui, fcm, ios]
 ### UI
 이외에도 전투 결과창, 보상창, 업적 클리어 노티 창등의 UI를 제작했습니다.
 
-<img width="33%" src = "https://github.com/user-attachments/assets/21decce2-51be-4c27-8850-890e945fae4c">
-<img width="33%" src = "https://github.com/user-attachments/assets/f6e228d5-af83-4eee-ac09-3e8881bb2f3d">
-<img width="33%" src = "https://github.com/user-attachments/assets/2e0642e7-95ad-44c7-bc67-c817b6a6f020">
+<img width="33%" src = "https://github.com/user-attachments/assets/21decce2-51be-4c27-8850-890e945fae4c" alt="MetaBolts 전투 결과 UI">
+<img width="33%" src = "https://github.com/user-attachments/assets/f6e228d5-af83-4eee-ac09-3e8881bb2f3d" alt="MetaBolts 보상 UI">
+<img width="33%" src = "https://github.com/user-attachments/assets/2e0642e7-95ad-44c7-bc67-c817b6a6f020" alt="MetaBolts 업적 클리어 알림 UI">
 
 ## 이외
 ### FCM, IOS 빌드
