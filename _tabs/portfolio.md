@@ -4,26 +4,73 @@ icon: fas fa-briefcase
 order: 1
 ---
 
-포트폴리오 문서를 원본 디렉토리 구조에 맞춰 정리했습니다.
+# Portfolio
 
-## Structure
-- Portfolio
-- Project
-- CPPServer
-- TechnicalDocs (planned)
+프로젝트와 기술 문서를 정리한 포트폴리오입니다.
+게임 클라이언트 개발 경험과 서버 구현 문서를 함께 아카이빙하고 있습니다.
 
 ## Project
-{% assign project_posts = site.posts | where_exp: "post", "post.categories contains 'Portfolio' and post.categories contains 'Project'" %}
-{% for post in project_posts %}
-- [{{ post.title }}]({{ post.url | relative_url }})
-{% endfor %}
 
-## CPPServer
+|개요|Project|
+|---|---|
+|콩스튜디오|가디언 테일즈|
+|펄어비스|검은사막 모바일|
+|4시 33분|Meta Bolts|
+|2022 대학교 졸업 작품|ToyLand|
+|2021 대학교 팀 프로젝트|Lost Home|
+|2021 대학교 팀 프로젝트|도깨비|
+
+## Highlight
+
+### MetaBolts
+- Unity / C#
+- 수집형 액션 RPG
+- 전반적인 컨텐츠 제작, SDK 적용, 버그 픽스, 타 파트를 위한 툴 제작
+- 오픈 베타 테스트 출시
+
+[MetaBolts 문서 보기]({{ '/posts/MetaBolts/' | relative_url }})
+
+### MMORPG Server
+- C++, IOCP, Protobuf, Unreal 5.4, MSSQL, Python
+- 검은사막 모바일 스타일의 MMORPG를 기준으로 개인 제작 중인 서버 프로젝트
+- 서버 Core와 콘텐츠 동기화 문서를 정리해두었습니다
+
 {% assign cppserver_posts = site.posts | where_exp: "post", "post.categories contains 'Portfolio' and post.categories contains 'CPPServer'" %}
 {% for post in cppserver_posts %}
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
-## Notes
-- 전체 카테고리 목록은 [Categories]({{ '/categories/' | relative_url }})에서 확인할 수 있습니다.
-- 기술문서는 이후 `Portfolio > TechnicalDocs` 구조로 같은 방식으로 확장하면 됩니다.
+### ToyLand
+- Unreal 4.26.2
+- 3D 액션 / 핵 앤 슬래시
+- Player Character, UI, Interactive Object 작업 담당
+- BIC, 청강 크로니클, 버닝비버 전시
+
+[ToyLand 문서 보기]({{ '/posts/ToyLand/' | relative_url }})
+
+### 협업 툴
+- Unity 기반 툴링
+- 파일 관리, GitHub Issue 관리 등 협업 생산성을 위한 기능 제작
+- 엔진 종속 툴과 외부 툴을 함께 확장 중
+
+[협업툴 문서 보기]({{ '/posts/협업툴/' | relative_url }})
+
+### 도깨비
+- Unity 2020.2.3.f1
+- 2D 액션 플랫포머
+- Enemy, UI, 현실 세계 연출, 튜토리얼 제작 담당
+- BIC, Unity MWU, BIGS 전시
+
+[도깨비 문서 보기]({{ '/posts/도깨비/' | relative_url }})
+
+## Coding Style
+
+작업의 우선순위는 안정성, 유지보수성, 성능 순으로 두고 있습니다.
+코드는 스스로 설명해야 한다고 생각하며, 과한 최적화나 모호한 이름보다 읽기 쉬운 구조와 명확한 추상화를 우선합니다.
+
+- 안정성 우선
+- 유지보수성과 확장성 중시
+- 모호한 축약어 지양
+- `const` 적극 사용
+- 완전한 `is-a` 관계가 아니면 `has-a`로 설계
+- 의도를 설명하는 주석만 제한적으로 사용
