@@ -50,11 +50,11 @@ order: 1
   </tbody>
 </table>
 
-## Highlight
+## Project
 
 ### MetaBolts
 
-<p align="center" width="100%">
+<p align="left" width="100%">
     <img width="80%" src="/assets/img/portfolio/metabolts.jpg" alt="MetaBolts">
 </p>
 
@@ -96,7 +96,7 @@ order: 1
 
 ### ToyLand
 
-<p align="center" width="100%">
+<p align="left" width="100%">
     <img width="80%" src="/assets/img/portfolio/ToyLand.jpg" alt="MetaBolts">
 </p>
 
@@ -127,7 +127,7 @@ order: 1
 
 ### 도깨비
 
-<p align="center" width="100%">
+<p align="left" width="100%">
     <img width="80%" src="/assets/img/portfolio/Dokkaebi.jpg" alt="MetaBolts">
 </p>
 
