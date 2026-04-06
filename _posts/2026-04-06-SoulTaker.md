@@ -296,8 +296,8 @@ public int GetPopupStackCount => popupStack.Count;
 ```
 
 UI의 생명 주기는 
-Window의 경우에는 'Load()', 'Begin()', 'Resume()', 'Pause()', 'Finish()'의 생명주기를 가지고
-Popup의 경우에는 'Begin()', 'OpenAnimation()', 'CloseAnimation()', 'Finish()'의 생명 주기를 가집니다.
+Window의 경우에는 `Load()`, `Begin()`, `Resume()`, `Pause()`, `Finish()`의 생명주기를 가지고  
+Popup의 경우에는 `Begin()`, `OpenAnimation()`, `CloseAnimation()`, `Finish()`의 생명 주기를 가집니다.
 
 ### Canvas 보장
 UI 쪽에서 중요한 부분 중 하나는 "Canvas가 항상 존재한다고 가정하지 않는다"는 점입니다.
