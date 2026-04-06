@@ -43,6 +43,10 @@ order: 1
       <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">2021 대학교 팀 프로젝트</td>
       <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">도깨비</td>
     </tr>
+    <tr>
+      <td style="color: #94A3B8; padding: 0.75rem 0.5rem;">개인 프로젝트</td>
+      <td style="color: #E2E8F0; font-weight: 600; padding: 0.75rem 0.5rem;">개인 프로젝트</td>
+    </tr>
   </tbody>
 </table>
 
@@ -54,7 +58,7 @@ order: 1
   <img
     src="https://img.youtube.com/vi/Or4Pxzo4idw/0.jpg"
     alt="MetaBolts 유튜브 대표 썸네일"
-    style="width: 100%; max-width: 720px; border-radius: 14px;"
+    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
   >
 </p>
 
@@ -65,18 +69,26 @@ order: 1
 
 [MetaBolts 문서 보기]({{ '/posts/MetaBolts/' | relative_url }})
 
+### 개인 프로젝트
+
+- Unity 기반 액션 프로젝트
+- Enemy FSM / Behavior Tree 전환 구조, 전투 피드백 파이프라인, UI 프레임워크, Addressable 툴링 작업
+- 최근 작성한 실제 코드 기준으로 시스템을 문서화
+
+[개인 프로젝트 문서 보기]({{ '/posts/개인-프로젝트/' | relative_url }})
+
 ### MMORPG Server
 
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/4a6f27b1-b185-44d9-a4ef-4da3f36a7eee"
     alt="MMORPG 서버 이동 동기화 예시 이미지"
-    style="width: 100%; max-width: 720px; border-radius: 14px;"
+    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
   >
 </p>
 
 - C++, IOCP, Protobuf, Unreal 5.4, MSSQL, Python
-- 검은사막 모바일 스타일의 MMORPG를 기준으로 개인 제작 중인 서버 프로젝트
+- MMORPG를 기준으로 개인 제작 중인 서버 프로젝트
 - 서버 Core와 콘텐츠 동기화 문서를 정리해두었습니다
 
 {% assign cppserver_posts = site.posts | where_exp: "post", "post.categories contains 'Portfolio' and post.categories contains 'CPPServer'" %}
@@ -90,7 +102,7 @@ order: 1
   <img
     src="https://img.youtube.com/vi/ML6XieDvd6Y/0.jpg"
     alt="ToyLand 유튜브 대표 썸네일"
-    style="width: 100%; max-width: 720px; border-radius: 14px;"
+    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
   >
 </p>
 
@@ -107,7 +119,7 @@ order: 1
   <img
     src="https://github.com/user-attachments/assets/ef2092f0-9c48-44dd-8130-1a689c44a3ef"
     alt="협업 툴 대표 화면"
-    style="width: 100%; max-width: 720px; border-radius: 14px;"
+    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
   >
 </p>
 
@@ -123,7 +135,7 @@ order: 1
   <img
     src="https://img.youtube.com/vi/ubSrKggzOyk/0.jpg"
     alt="도깨비 유튜브 대표 썸네일"
-    style="width: 100%; max-width: 720px; border-radius: 14px;"
+    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
   >
 </p>
 
