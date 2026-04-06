@@ -7,8 +7,8 @@ tags: [portfolio, unity, ai, combat, ui, tool, addressables]
 
 # 개인 프로젝트
 
-최근 작성한 Unity 클라이언트 코드들을 기준으로 정리한 문서입니다.
-현재 프로젝트에서는 Character 구조, Behavior Tree 기반 적 AI, 게임 부트와 매니저 구성, UI 프레임워크를 중심으로 작업했습니다.
+최근 작성한 `Unity` 클라이언트 코드들을 기준으로 정리한 문서입니다.
+현재 프로젝트에서는 `Character` 구조, `Behavior Tree` 기반 적 `AI`, 게임 부트와 매니저 구성, `UI` 프레임워크를 중심으로 작업했습니다.
 
 ## Character 구조
 
@@ -35,7 +35,7 @@ public sealed class Character : FieldObject
 
 ### Feature 기반 구조
 캐릭터의 실제 기능은 `BuildFeatures()`에서 조립합니다.
-팩션, 스탯, 상태, 생명, 무기, 공격 판정, 액션 실행, 소울 스택, 대시 획득 같은 기능을 각각 Feature 단위로 나눠 두었습니다.
+팩션, 스탯, 상태, 생명, 무기, 공격 판정, 액션 실행, 소울 스택, 대시 획득 같은 기능을 각각 `Feature` 단위로 나눠 두었습니다.
 
 ```c#
 protected override void BuildFeatures()
@@ -106,8 +106,8 @@ protected override void Update()
     <img width="80%" src="/assets/img/portfolio/behavior-tree-1.png" alt="개인 프로젝트의 Behavior Tree 구성 화면">
 </p>
 
-AI의 경우에는 기획자가 편하게 수정을 진행할 수 있도록 Visual Scripting 가능하도록 제작했습니다. 
-기본적인 뼈대는 UnityBehavior를 사용해서 구현했습니다.
+`AI`의 경우에는 기획자가 편하게 수정을 진행할 수 있도록 `Visual Scripting` 가능하도록 제작했습니다.
+기본적인 뼈대는 `Unity Behavior`를 사용해서 구현했습니다.
 
 ### EnemyBTRunner
 `EnemyBTRunner`는 적 캐릭터에 바인딩되는 실제 런타임 컨트롤러입니다.
@@ -156,9 +156,9 @@ BT 노드가 필요한 대부분의 정보는 `EnemyContext`에 모아 두었습
 노드는 "무엇을 할지"에 집중하고, 실제 게임 오브젝트 접근과 공통 로직은 Context에서 처리하는 방향으로 설계했습니다.
 
 ### EnemyBTNodes
-실제 Behavior Tree의 내용은 `EnemyBTNodes.cs`에 정의한 Condition / Action 노드들로 구성됩니다.
+실제 `Behavior Tree`의 내용은 `EnemyBTNodes.cs`에 정의한 `Condition` / `Action` 노드들로 구성됩니다.
 
-예를 들어 Condition 노드는 다음과 같은 역할을 합니다.
+예를 들어 `Condition` 노드는 다음과 같은 역할을 합니다.
 - 타겟이 유효한지 확인
 - 공격 범위 안에 들어왔는지 확인
 - HP 비율이 특정 값 이하인지 확인
@@ -174,7 +174,7 @@ public override bool IsTrue()
 }
 ```
 
-Action 노드는 다음과 같은 역할을 합니다.
+`Action` 노드는 다음과 같은 역할을 합니다.
 - 가장 가까운 적대 타겟 탐색
 - 타겟 방향으로 회전
 - 타겟을 향해 이동
@@ -236,7 +236,7 @@ private async UniTask InitializeAsync()
 
 ### ObjectPoolManager
 `ObjectPoolManager`는 풀을 생성하고, 동기/비동기 방식으로 오브젝트를 가져오고, 다시 반환하는 역할을 담당합니다.
-UI 팝업, UI 컴포넌트, 이펙트처럼 반복 생성되는 오브젝트를 재사용하기 위한 매니저입니다.
+`UI` 팝업, `UI` 컴포넌트, 이펙트처럼 반복 생성되는 오브젝트를 재사용하기 위한 매니저입니다.
 
 ```c#
 public GameObject GetObjectSync(string tableName)
@@ -270,7 +270,7 @@ public async UniTask LoadTable(Action onFinished = null)
 
 ### MessageSystem
 `MessageSystem`은 프로젝트 전반에서 사용하는 메시지 허브입니다.
-point-to-point와 pub/sub을 모두 지원하고, 중요한 특징은 "이번 프레임에 발행된 이벤트를 프레임 끝에서 일괄 처리한다"는 점입니다.
+`point-to-point`와 `pub/sub`을 모두 지원하고, 중요한 특징은 "이번 프레임에 발행된 이벤트를 프레임 끝에서 일괄 처리한다"는 점입니다.
 
 이 방식으로 같은 프레임 내 코드 실행 순서에 따라 이벤트를 듣고 못 듣는 문제가 생기는 것을 줄이려고 했습니다.
 
@@ -284,20 +284,20 @@ private List<PublishedEvent> publishedOnThisFrame =
 
 ## UI 구조
 
-UI는 `UIManager`, `UISceneRoot`, `ImmortalCanvas`를 중심으로 구성했습니다.
+`UI`는 `UIManager`, `UISceneRoot`, `ImmortalCanvas`를 중심으로 구성했습니다.
 
 ### UIWindow / UIPopup 분리
-UI는 크게 Window와 Popup으로 나뉩니다.
-Window는 화면의 메인이 되는 UI이고, Popup은 그 위에 중첩 가능한 보조 UI입니다.
+`UI`는 크게 `Window`와 `Popup`으로 나뉩니다.
+`Window`는 화면의 메인이 되는 `UI`이고, `Popup`은 그 위에 중첩 가능한 보조 `UI`입니다.
 
 ```c#
 public UIWindow CurrentWindow => windowStack.TryPeek(out var currWindow) ? currWindow : null;
 public int GetPopupStackCount => popupStack.Count;
 ```
 
-UI의 생명 주기는 
-Window의 경우에는 `Load()`, `Begin()`, `Resume()`, `Pause()`, `Finish()`의 생명주기를 가지고  
-Popup의 경우에는 `Begin()`, `OpenAnimation()`, `CloseAnimation()`, `Finish()`의 생명 주기를 가집니다.
+`UI`의 생명 주기는
+`Window`의 경우에는 `Load()`, `Begin()`, `Resume()`, `Pause()`, `Finish()`의 생명주기를 가지고
+`Popup`의 경우에는 `Begin()`, `OpenAnimation()`, `CloseAnimation()`, `Finish()`의 생명 주기를 가집니다.
 
 ### Canvas 보장
 UI 쪽에서 중요한 부분 중 하나는 "Canvas가 항상 존재한다고 가정하지 않는다"는 점입니다.
@@ -320,12 +320,12 @@ private bool EnsureUIRoot()
 }
 ```
 
-즉, UI Scene Root가 이미 씬에 있으면 그것을 사용하고, 없으면 번들에서 로드하고, 그것도 없으면 런타임에 직접 생성합니다.
-이 덕분에 어떤 씬에서도 Canvas가 없어서 UI가 뜨지 않는 문제가 발생하지 않습니다.
+즉, `UI Scene Root`가 이미 씬에 있으면 그것을 사용하고, 없으면 번들에서 로드하고, 그것도 없으면 런타임에 직접 생성합니다.
+이 덕분에 어떤 씬에서도 `Canvas`가 없어서 `UI`가 뜨지 않는 문제가 발생하지 않습니다.
 
 ### ImmortalCanvas
-`ImmortalCanvas`는 씬 전환과 무관하게 유지되어야 하는 공통 UI를 담당합니다. 
-현재는 FadeInOut 연출을 위한 UI, 입력을 막기 위한 UI가 들어가 있습니다.
+`ImmortalCanvas`는 씬 전환과 무관하게 유지되어야 하는 공통 `UI`를 담당합니다.
+현재는 `FadeInOut` 연출을 위한 `UI`, 입력을 막기 위한 `UI`가 들어가 있습니다.
 
 ```c#
 public static ImmortalCanvas Load()
@@ -339,11 +339,11 @@ public static ImmortalCanvas Load()
 }
 ```
 
-즉, 씬별 UI 루트는 `UISceneRoot`, 전역 유지 UI는 `ImmortalCanvas`로 나눈 구조입니다.
+즉, 씬별 `UI` 루트는 `UISceneRoot`, 전역 유지 `UI`는 `ImmortalCanvas`로 나눈 구조입니다.
 
 ## Tool
 
-Addressable 리소스 관리를 돕기 위한 자동화 에디터 툴을 별도로 제작해 사용하고 있습니다.
+`Addressable` 리소스 관리를 돕기 위한 자동화 에디터 툴을 별도로 제작해 사용하고 있습니다.
 리소스를 카테고리 단위로 정리하고, 매핑 작업을 반복 수작업으로 처리하지 않도록 보조하는 용도입니다.
 
 이 부분은 현재 프로젝트 코드의 본질적인 런타임 시스템보다는 작업 효율과 리소스 관리 편의성을 높이기 위한 툴링 영역으로 보고 있습니다.

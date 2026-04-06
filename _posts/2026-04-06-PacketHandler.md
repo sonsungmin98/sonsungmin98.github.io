@@ -7,7 +7,7 @@ tags: [portfolio, cpp, protobuf, packet, server]
 
 # Packet Handler
 
-현재 protobuf를 이용해서 서버의 패킷을 구성하고 있습니다. 해당 protobuf에 패킷이 추가/변경/삭제 됨에 따라 자동으로 Handler를 Generate 해줍니다.
+현재 `protobuf`를 이용해서 서버의 패킷을 구성하고 있습니다. 해당 `protobuf`에 패킷이 추가/변경/삭제 됨에 따라 자동으로 `Handler`를 `Generate` 해줍니다.
 
 ```protobuf
 message C_LOGIN
@@ -24,8 +24,8 @@ message S_LOGIN
 
 위와 같이 패킷이 있다면 해당 패킷을 분석하여 코드를 자동으로 생성해주는데 다음과 같은 규칙을 따릅니다.
 
-- prefix로 C_가 붙으면 client에서 client로 보내는 패킷입니다.
-- prefix로 S_가 붙으면 server에서 client로 보내는 패킷입니다.
+- `prefix`로 `C_`가 붙으면 `client`에서 `client`로 보내는 패킷입니다.
+- `prefix`로 `S_`가 붙으면 `server`에서 `client`로 보내는 패킷입니다.
 
 ```python
 import argparse
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     main()
 ```
 
-해당 규칙을 통해 python을 이용하여 Packet Handler를 자동 생성해주는 Generator를 제작했습니다.
+해당 규칙을 통해 `python`을 이용하여 `Packet Handler`를 자동 생성해주는 `Generator`를 제작했습니다.
 
 ### Server Side 결과물
 
@@ -162,7 +162,7 @@ private:
 };
 ```
 
-위와 같이 헤더파일에 해당 패킷에 대한 코드들이 추가 되고 자동으로 생성된 이 코드들에 대해서 cpp파일에서 추가/변경/삭제를 진행해주시면 됩니다.
-보시다시피 C_에 해당하는 패킷들만 추가가 되었습니다.
+위와 같이 헤더파일에 해당 패킷에 대한 코드들이 추가 되고 자동으로 생성된 이 코드들에 대해서 `cpp`파일에서 추가/변경/삭제를 진행해주시면 됩니다.
+보시다시피 `C_`에 해당하는 패킷들만 추가가 되었습니다.
 
-[Session](/posts/SessionService/)에서 넘어온 패킷에 따라 GPacketHandler에서 Packet의 ID에 따른 알맞은 작업을 수행하게 됩니다.
+[Session](/posts/SessionService/)에서 넘어온 패킷에 따라 `GPacketHandler`에서 `Packet`의 `ID`에 따른 알맞은 작업을 수행하게 됩니다.
