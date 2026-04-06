@@ -54,13 +54,11 @@ order: 1
 
 ### MetaBolts
 
-<p align="center">
-  <img
-    src="https://img.youtube.com/vi/Or4Pxzo4idw/0.jpg"
-    alt="MetaBolts 유튜브 대표 썸네일"
-    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
-  >
+<p align="center" width="100%">
+    <img width="80%" src="/assets/img/portfolio/metabolts.jpg" alt="MetaBolts">
 </p>
+
+[YouTube](https://www.youtube.com/watch?v=Or4Pxzo4idw){: .btn .btn-outline-primary }
 
 - Unity / C#
 - 수집형 액션 RPG
@@ -98,13 +96,11 @@ order: 1
 
 ### ToyLand
 
-<p align="center">
-  <img
-    src="https://img.youtube.com/vi/ML6XieDvd6Y/0.jpg"
-    alt="ToyLand 유튜브 대표 썸네일"
-    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
-  >
+<p align="center" width="100%">
+    <img width="80%" src="/assets/img/portfolio/ToyLand.jpg" alt="MetaBolts">
 </p>
+
+[YouTube](https://www.youtube.com/watch?v=ML6XieDvd6Y){: .btn .btn-outline-primary }
 
 - Unreal 4.26.2
 - 3D 액션 / 핵 앤 슬래시
@@ -131,13 +127,11 @@ order: 1
 
 ### 도깨비
 
-<p align="center">
-  <img
-    src="https://img.youtube.com/vi/ubSrKggzOyk/0.jpg"
-    alt="도깨비 유튜브 대표 썸네일"
-    style="display: block; width: 100%; max-width: 720px; margin: 0 auto; border-radius: 14px;"
-  >
+<p align="center" width="100%">
+    <img width="80%" src="/assets/img/portfolio/Dokkaebi.jpg" alt="MetaBolts">
 </p>
+
+[YouTube](https://www.youtube.com/watch?v=ubSrKggzOyk){: .btn .btn-outline-primary }
 
 - Unity 2020.2.3.f1
 - 2D 액션 플랫포머
