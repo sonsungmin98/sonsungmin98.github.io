@@ -75,7 +75,7 @@ order: 1
 - Enemy FSM / Behavior Tree 전환 구조, 전투 피드백 파이프라인, UI 프레임워크, Addressable 툴링 작업
 - 최근 작성한 실제 코드 기준으로 시스템을 문서화
 
-[개인 프로젝트 문서 보기]({{ '/posts/개인-프로젝트/' | relative_url }})
+[개인 프로젝트 문서 보기]({{ '/posts/SoulTaker/' | relative_url }})
 
 ### MMORPG Server
 
