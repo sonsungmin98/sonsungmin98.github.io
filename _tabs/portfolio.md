@@ -67,13 +67,13 @@ order: 1
 
 [MetaBolts 문서 보기]({{ '/posts/MetaBolts/' | relative_url }})
 
-### 개인 프로젝트
+### SoulTaker
 
 - Unity 기반 액션 프로젝트
 - Character 구조, Behavior Tree 기반 적 AI, Game Boot, UI 프레임워크 중심으로 정리한 프로젝트
 - 최근 작성한 실제 코드 기준으로 시스템 구조를 문서화
 
-[개인 프로젝트 문서 보기]({{ '/posts/SoulTaker/' | relative_url }})
+[SoulTaker 문서 보기]({{ '/posts/SoulTaker/' | relative_url }})
 
 ### MMORPG Server
 
