@@ -268,15 +268,14 @@ public async UniTask LoadTable(Action onFinished = null)
 
 즉, `Game`은 부트 흐름을 담당하고, `TableManager`는 실제 데이터 준비를 맡는 구조입니다.
 
-### MessageSystem
-`MessageSystem`은 프로젝트 전반에서 사용하는 메시지 허브입니다.
+### EventBusSystem
+`EventBusSystem`은 프로젝트 전반에서 사용하는 이벤트 허브입니다.
 `point-to-point`와 `pub/sub`을 모두 지원하고, 중요한 특징은 "이번 프레임에 발행된 이벤트를 프레임 끝에서 일괄 처리한다"는 점입니다.
 
 이 방식으로 같은 프레임 내 코드 실행 순서에 따라 이벤트를 듣고 못 듣는 문제가 생기는 것을 줄이려고 했습니다.
 
 ```c#
-private List<PublishedEvent> publishedOnThisFrame =
-    new List<PublishedEvent>();
+private List<PublishedEvent> publishedOnThisFrame = new List<PublishedEvent>();
 ```
 
 또한 구독/해제 요청도 즉시 수정하지 않고 모아두었다가 한 번에 반영합니다.
@@ -294,10 +293,6 @@ private List<PublishedEvent> publishedOnThisFrame =
 public UIWindow CurrentWindow => windowStack.TryPeek(out var currWindow) ? currWindow : null;
 public int GetPopupStackCount => popupStack.Count;
 ```
-
-`UI`의 생명 주기는
-`Window`의 경우에는 `Load()`, `Begin()`, `Resume()`, `Pause()`, `Finish()`의 생명주기를 가지고
-`Popup`의 경우에는 `Begin()`, `OpenAnimation()`, `CloseAnimation()`, `Finish()`의 생명 주기를 가집니다.
 
 ### Canvas 보장
 UI 쪽에서 중요한 부분 중 하나는 "Canvas가 항상 존재한다고 가정하지 않는다"는 점입니다.
