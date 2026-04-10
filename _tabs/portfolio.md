@@ -52,21 +52,6 @@ order: 1
 
 ## Project
 
-### MetaBolts
-
-<p align="left" width="100%">
-    <img width="80%" src="/assets/img/portfolio/metabolts.jpg" alt="MetaBolts">
-</p>
-
-[YouTube](https://www.youtube.com/watch?v=Or4Pxzo4idw){: .btn .btn-outline-primary }
-
-- Unity / C#
-- 수집형 액션 RPG
-- 전반적인 컨텐츠 제작, SDK 적용, 버그 픽스, 타 파트를 위한 툴 제작
-- 오픈 베타 테스트 출시
-
-[MetaBolts 문서 보기]({{ '/posts/MetaBolts/' | relative_url }})
-
 ### SoulTaker
 
 - Unity 기반 액션 프로젝트
